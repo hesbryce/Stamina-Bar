@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "Untitled design (4).png",
       "idiom" : "watch",
       "role" : "notificationCenter",
       "scale" : "2x",
@@ -8,6 +9,7 @@
       "subtype" : "38mm"
     },
     {
+      "filename" : "Untitled design (5).png",
       "idiom" : "watch",
       "role" : "notificationCenter",
       "scale" : "2x",
@@ -15,18 +17,21 @@
       "subtype" : "42mm"
     },
     {
+      "filename" : "Untitled design (7).png",
       "idiom" : "watch",
       "role" : "companionSettings",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
+      "filename" : "Untitled design (8).png",
       "idiom" : "watch",
       "role" : "companionSettings",
       "scale" : "3x",
       "size" : "29x29"
     },
     {
+      "filename" : "Untitled design (6).png",
       "idiom" : "watch",
       "role" : "notificationCenter",
       "scale" : "2x",
@@ -34,6 +39,7 @@
       "subtype" : "45mm"
     },
     {
+      "filename" : "Untitled design (9).png",
       "idiom" : "watch",
       "role" : "appLauncher",
       "scale" : "2x",
@@ -41,6 +47,7 @@
       "subtype" : "38mm"
     },
     {
+      "filename" : "Untitled design (10).png",
       "idiom" : "watch",
       "role" : "appLauncher",
       "scale" : "2x",
@@ -48,6 +55,7 @@
       "subtype" : "40mm"
     },
     {
+      "filename" : "Untitled design (11).png",
       "idiom" : "watch",
       "role" : "appLauncher",
       "scale" : "2x",
@@ -55,6 +63,7 @@
       "subtype" : "41mm"
     },
     {
+      "filename" : "Untitled design (12).png",
       "idiom" : "watch",
       "role" : "appLauncher",
       "scale" : "2x",
@@ -62,6 +71,7 @@
       "subtype" : "44mm"
     },
     {
+      "filename" : "Untitled design (13).png",
       "idiom" : "watch",
       "role" : "appLauncher",
       "scale" : "2x",
@@ -69,6 +79,7 @@
       "subtype" : "45mm"
     },
     {
+      "filename" : "Untitled design (14).png",
       "idiom" : "watch",
       "role" : "quickLook",
       "scale" : "2x",
@@ -76,6 +87,7 @@
       "subtype" : "38mm"
     },
     {
+      "filename" : "Untitled design (15).png",
       "idiom" : "watch",
       "role" : "quickLook",
       "scale" : "2x",
@@ -83,6 +95,7 @@
       "subtype" : "42mm"
     },
     {
+      "filename" : "Untitled design (16).png",
       "idiom" : "watch",
       "role" : "quickLook",
       "scale" : "2x",
@@ -90,6 +103,7 @@
       "subtype" : "44mm"
     },
     {
+      "filename" : "sbIcon234px (2).png",
       "idiom" : "watch",
       "role" : "quickLook",
       "scale" : "2x",
@@ -97,6 +111,7 @@
       "subtype" : "45mm"
     },
     {
+      "filename" : "Untitled design (17).png",
       "idiom" : "watch-marketing",
       "scale" : "1x",
       "size" : "1024x1024"
