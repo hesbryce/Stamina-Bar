@@ -15,6 +15,7 @@
 		D5AF989E28B7180500CFCB2D /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AF989D28B7180500CFCB2D /* ComplicationController.swift */; };
 		D5AF98A028B7180600CFCB2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5AF989F28B7180600CFCB2D /* Assets.xcassets */; };
 		D5AF98A328B7180600CFCB2D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5AF98A228B7180600CFCB2D /* Preview Assets.xcassets */; };
+		D5AF98B528B7257500CFCB2D /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5AF98B428B7257500CFCB2D /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,8 @@
 		D5AF989F28B7180600CFCB2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5AF98A228B7180600CFCB2D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D5AF98A428B7180600CFCB2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5AF98B228B7257500CFCB2D /* Stamina Bar WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Stamina Bar WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		D5AF98B428B7257500CFCB2D /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.5.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5AF98B528B7257500CFCB2D /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +93,7 @@
 				D5AF988D28B7180300CFCB2D /* Stamina Bar WatchKit App */,
 				D5AF989828B7180500CFCB2D /* Stamina Bar WatchKit Extension */,
 				D5AF988628B7180300CFCB2D /* Products */,
+				D5AF98B328B7257500CFCB2D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +118,7 @@
 		D5AF989828B7180500CFCB2D /* Stamina Bar WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				D5AF98B228B7257500CFCB2D /* Stamina Bar WatchKit Extension.entitlements */,
 				D5AF989928B7180500CFCB2D /* ContentView.swift */,
 				D5AF989B28B7180500CFCB2D /* Stamina_BarApp.swift */,
 				D5AF989D28B7180500CFCB2D /* ComplicationController.swift */,
@@ -129,6 +135,14 @@
 				D5AF98A228B7180600CFCB2D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D5AF98B328B7257500CFCB2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5AF98B428B7257500CFCB2D /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -396,6 +410,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Stamina Bar WatchKit Extension/Stamina Bar WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Stamina Bar WatchKit Extension/Preview Content\"";
@@ -404,7 +419,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Stamina Bar WatchKit Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Stamina Bar WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = Stamina_Bar_WatchKit_Extension.ComplicationController;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Stamina Bar reads your heart rate data to properly calibrate the bar.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Stamina Bar saves your heart rate data to HealthKit to keep the Stamina Bar calibrated properly.";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -428,6 +445,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Stamina Bar WatchKit Extension/Stamina Bar WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Stamina Bar WatchKit Extension/Preview Content\"";
@@ -436,7 +454,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Stamina Bar WatchKit Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Stamina Bar WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = Stamina_Bar_WatchKit_Extension.ComplicationController;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Stamina Bar reads your heart rate data to properly calibrate the bar.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Stamina Bar saves your heart rate data to HealthKit to keep the Stamina Bar calibrated properly.";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
