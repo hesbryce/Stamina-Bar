@@ -7,9 +7,13 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
     var body: some View {
-        Image("100")
+        VStack {
+            HeartRateMesurementView()
+            //
+        }
     }
 }
 

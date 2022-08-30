@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct Stamina_BarApp: App {
-    var body: some Scene {
+    @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
                 ContentView()
