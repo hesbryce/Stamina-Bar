@@ -4,15 +4,18 @@
 //
 //  Created by Zachary Ellis on 8/24/22.
 //
+//
+
 
 import Foundation
 import SwiftUI
 
 struct CurrentHeartRateView: View {
+  
     var currentHeartRate: Int
     var minimumHeartRate: Int
     var maximumHeartRate: Int
-    
+
     var body: some View {
         VStack (alignment: .trailing, spacing: 10) {
             if currentHeartRate <= Int(Double(maximumHeartRate) * 0.5) {
@@ -48,6 +51,7 @@ struct CurrentHeartRateView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
             }
+            
             VStack {
                 HStack {
                     Text("\(currentHeartRate) BPM")

@@ -7,20 +7,17 @@
 
 
 
-import SwiftUI
-import HealthKit
-
-struct HeartRateMesurementView: View {
-    @ObservedObject var heartRateMeasurementService = HeartRateMeasurementService()
-    
-    var body: some View {
-        VStack {
-            CurrentHeartRateView(currentHeartRate: heartRateMeasurementService.currentHeartRate, minimumHeartRate: heartRateMeasurementService.minHeartRate, maximumHeartRate: heartRateMeasurementService.maxHeartRate)
-            
-            
-        }.padding()
-    }
-}
+//import SwiftUI
+//import HealthKit
+//
+//struct HeartRateMesurementView: View {
+//    @ObservedObject var heartRateMeasurementService = HeartRateMeasurementService()
+//    
+//    var body: some View {
+//        VStack {
+//            CurrentHeartRateView(currentHeartRate: heartRateMeasurementService.currentHeartRate, minimumHeartRate: heartRateMeasurementService.minHeartRate, maximumHeartRate: heartRateMeasurementService.maxHeartRate)
+//        }.padding()
+//    }
 
 
 
@@ -34,9 +31,10 @@ struct HeartRateMesurementView: View {
 
 
 
-
-struct HeartRateMesurementView_Previews: PreviewProvider {
-    static var previews: some View {
-        HeartRateMesurementView()
-    }
-}
+//
+//
+//struct HeartRateMesurementView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HeartRateMesurementView()
+//    }
+//}

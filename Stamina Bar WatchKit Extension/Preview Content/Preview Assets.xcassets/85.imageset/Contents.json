@@ -2,14 +2,11 @@
   "images" : [
     {
       "filename" : "85.pdf",
-      "idiom" : "universal"
+      "idiom" : "watch"
     }
   ],
   "info" : {
     "author" : "xcode",
     "version" : 1
-  },
-  "properties" : {
-    "localizable" : true
   }
 }
