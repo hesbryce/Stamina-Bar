@@ -1,8 +1,9 @@
 {
   "images" : [
     {
-      "filename" : "75.pdf",
-      "idiom" : "watch"
+      "filename" : "75@2x.png",
+      "idiom" : "watch",
+      "scale" : "2x"
     }
   ],
   "info" : {
