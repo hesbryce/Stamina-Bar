@@ -47,8 +47,6 @@ struct ContentView: View {
                 Image("50")
             } else if (currentHeartRate < 175) {
                 Image("45")
-            } else if (currentHeartRate < 180) {
-                Image("40")
             } else if (currentHeartRate < 185) {
                 Image("35")
             } else if (currentHeartRate < 190) {
